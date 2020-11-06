@@ -14,7 +14,7 @@
       "minimum": 0
     },
     "currency": {
-      "$ref": "http://maasglobal.com/core/components/common.json#/definitions/metaCurrency"
+      "$ref": "http://maasglobal.com/core/components/common.json#/definitions/balanceCurrency"
     },
     "tokenId": {
       "$ref": "#/definitions/tokenId"
@@ -33,7 +33,7 @@
     },
     "type": {
       "type": "string",
-      "enum": ["charge", "refund"]
+      "enum": ["charge", "refund", "promotional_credits"]
     }
   },
   "required": ["amount", "currency"],
