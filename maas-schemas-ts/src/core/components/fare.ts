@@ -47,12 +47,12 @@ export interface TokenIdBrand {
 export type Fare = t.Branded<
   {
     amount?: number | null;
-    currency?: Common_.MetaCurrency;
+    currency?: Common_.BalanceCurrency;
     tokenId?: TokenId;
     hidden?: boolean;
     originalAmount?: number | null;
     productionAmount?: number | null;
-    type?: string & ('charge' | 'refund');
+    type?: string & ('charge' | 'refund' | 'promotional_credits');
   } & {
     amount: Defined;
     currency: Defined;
@@ -64,13 +64,22 @@ export type FareC = t.BrandC<
     [
       t.PartialC<{
         amount: t.UnionC<[t.NumberC, t.NullC]>;
-        currency: typeof Common_.MetaCurrency;
+        currency: typeof Common_.BalanceCurrency;
         tokenId: typeof TokenId;
         hidden: t.BooleanC;
         originalAmount: t.UnionC<[t.NumberC, t.NullC]>;
         productionAmount: t.UnionC<[t.NumberC, t.NullC]>;
         type: t.IntersectionC<
-          [t.StringC, t.UnionC<[t.LiteralC<'charge'>, t.LiteralC<'refund'>]>]
+          [
+            t.StringC,
+            t.UnionC<
+              [
+                t.LiteralC<'charge'>,
+                t.LiteralC<'refund'>,
+                t.LiteralC<'promotional_credits'>,
+              ]
+            >,
+          ]
         >;
       }>,
       t.TypeC<{
@@ -85,14 +94,18 @@ export const Fare: FareC = t.brand(
   t.intersection([
     t.partial({
       amount: t.union([t.number, t.null]),
-      currency: Common_.MetaCurrency,
+      currency: Common_.BalanceCurrency,
       tokenId: TokenId,
       hidden: t.boolean,
       originalAmount: t.union([t.number, t.null]),
       productionAmount: t.union([t.number, t.null]),
       type: t.intersection([
         t.string,
-        t.union([t.literal('charge'), t.literal('refund')]),
+        t.union([
+          t.literal('charge'),
+          t.literal('refund'),
+          t.literal('promotional_credits'),
+        ]),
       ]),
     }),
     t.type({
@@ -105,12 +118,12 @@ export const Fare: FareC = t.brand(
   ): x is t.Branded<
     {
       amount?: number | null;
-      currency?: Common_.MetaCurrency;
+      currency?: Common_.BalanceCurrency;
       tokenId?: TokenId;
       hidden?: boolean;
       originalAmount?: number | null;
       productionAmount?: number | null;
-      type?: string & ('charge' | 'refund');
+      type?: string & ('charge' | 'refund' | 'promotional_credits');
     } & {
       amount: Defined;
       currency: Defined;
