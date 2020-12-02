@@ -366,6 +366,7 @@ export type SubscriptionBase = t.Branded<
     selectable?: boolean;
     topUpId?: string;
     changeState?: SubscriptionChangeState_.SubscriptionChangeState;
+    cycles?: number;
   },
   SubscriptionBaseBrand
 >;
@@ -391,6 +392,7 @@ export type SubscriptionBaseC = t.BrandC<
     selectable: t.BooleanC;
     topUpId: t.StringC;
     changeState: typeof SubscriptionChangeState_.SubscriptionChangeState;
+    cycles: t.NumberC;
   }>,
   SubscriptionBaseBrand
 >;
@@ -416,6 +418,7 @@ export const SubscriptionBase: SubscriptionBaseC = t.brand(
     selectable: t.boolean,
     topUpId: t.string,
     changeState: SubscriptionChangeState_.SubscriptionChangeState,
+    cycles: t.number,
   }),
   (
     x,
@@ -441,6 +444,7 @@ export const SubscriptionBase: SubscriptionBaseC = t.brand(
       selectable?: boolean;
       topUpId?: string;
       changeState?: SubscriptionChangeState_.SubscriptionChangeState;
+      cycles?: number;
     },
     SubscriptionBaseBrand
   > => true,
