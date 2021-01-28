@@ -16,6 +16,32 @@
       "properties": {
         "location": {
           "$ref": "http://maasglobal.com/core/components/units-geo.json#/definitions/shortLocationString"
+        },
+        "metadata": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "agencyId": {
+                  "$ref": "http://maasglobal.com/core/components/common.json#/definitions/agencyId"
+                }
+              },
+              "required": ["agencyId"],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "planId": {
+                  "type": "string",
+                  "minLength": 2,
+                  "maxLength": 255
+                }
+              },
+              "required": ["planId"],
+              "additionalProperties": false
+            }
+          ]
         }
       },
       "required": ["location"],

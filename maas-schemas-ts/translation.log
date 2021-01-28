@@ -1,3 +1,5 @@
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/booking-meta.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/booking-option.json
 WARNING: minLength field not supported outside top-level definitions
@@ -8,11 +10,13 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/booking-option.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/booking-option.json
-INFO: missing description
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/booking-option.json
 INFO: missing description
   in ../maas-schemas/schemas/core/booking-option.json
 INFO: missing description
+  in ../maas-schemas/schemas/core/booking-option.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/booking.json
 INFO: missing description
   in ../maas-schemas/schemas/core/booking.json
@@ -24,6 +28,10 @@ INFO: missing description
   in ../maas-schemas/schemas/core/booking.json
 INFO: missing description
   in ../maas-schemas/schemas/core/booking.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/booking.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/card.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/card.json
 WARNING: minLength field not supported outside top-level definitions
@@ -48,14 +56,24 @@ WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/card.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/card.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/ACRISS.json
 WARNING: naming clash, ignoring default export
   in ../maas-schemas/schemas/core/components/address.json
-INFO: missing description
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/agencyOptions.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/components/api-common.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/api-common.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/api-common.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/authorization.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/authorization.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/bike-station.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/bike-station.json
 INFO: primitive type "string" used outside top-level definitions
@@ -75,6 +93,8 @@ WARNING: minimum field not supported outside top-level definitions
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/car-rental.json
 INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/components/car-rental.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/components/car-rental.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/car-rental.json
@@ -138,6 +158,12 @@ WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/car-rental.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/car-rental.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/common.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/common.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/common.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/common.json
 INFO: missing description
@@ -186,6 +212,10 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/configurator.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/configurator.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/configurator.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/cost.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/cost.json
 WARNING: multipleOf field not supported outside top-level definitions
@@ -214,17 +244,27 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/customerSelection.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/customerSelection.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/customerSelection.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/errors.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/errors.json
-WARNING: minimum field not supported outside top-level definitions
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/errors.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/components/fare.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/fare.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/fare.json
-INFO: primitive type "string" used outside top-level definitions
+WARNING: minimum field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/components/fare.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/fare.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/fare.json
+INFO: missing description
   in ../maas-schemas/schemas/core/components/fare.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/fare.json
@@ -270,6 +310,8 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/geolocation.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/geolocation.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/geolocation.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/geolocation.json
 INFO: missing description
@@ -286,8 +328,14 @@ WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/geometry.json
 WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/geometry.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/geometry.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/i18n.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/i18n.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/message.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/message.json
 WARNING: maxLength field not supported outside top-level definitions
@@ -360,14 +408,20 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/payment-parameters.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/payment-parameters.json
-INFO: missing description
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/components/payment-parameters.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/payment-parameters.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/payment-parameters.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/personalDataAllowItem.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/personalDataAllowItem.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/personalDataAllowItem.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/personalDataValidation.json
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/personalDataValidation.json
 INFO: primitive type "string" used outside top-level definitions
@@ -400,17 +454,15 @@ WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/personalDataValidation.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/personalDataValidation.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/personalDocumentRequiredItem.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/personalDocumentRequiredItem.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/personalDocumentRequiredItem.json
-INFO: primitive type "string" used outside top-level definitions
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/components/place.json
 INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/components/place.json
-WARNING: minLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/components/place.json
-WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/place.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/place.json
@@ -430,10 +482,92 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/place.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/place.json
-INFO: missing description
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/components/place.json
+WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/components/place.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/components/place.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/point-cost.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/components/state-log.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/state-log.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state-log.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/state.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/station.json
 INFO: primitive type "string" used outside top-level definitions
@@ -450,7 +584,7 @@ INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/station.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/station.json
-INFO: missing description
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/components/station.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/station.json
@@ -466,9 +600,21 @@ INFO: missing description
   in ../maas-schemas/schemas/core/components/station.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/station.json
-INFO: primitive type "string" used outside top-level definitions
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/station.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/components/subscriptionChangeState.json
-INFO: primitive type "string" used outside top-level definitions
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/subscriptionChangeState.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/subscriptionChangeState.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/subscriptionChangeState.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/subscriptionChangeState.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/subscriptionChangeState.json
+INFO: missing description
   in ../maas-schemas/schemas/core/components/subscriptionChangeState.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/terms.json
@@ -496,6 +642,8 @@ WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/terms.json
 WARNING: multipleOf field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/components/terms.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/terms.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/components/terms.json
 WARNING: minLength field not supported outside top-level definitions
@@ -524,12 +672,82 @@ INFO: missing description
   in ../maas-schemas/schemas/core/components/terms.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/terms.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/travel-mode.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/units-geo.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/components/units.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/units.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/units.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/units.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/units.json
 INFO: missing description
   in ../maas-schemas/schemas/core/components/units.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/units.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/units.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/units.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/components/units.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/customer.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/customer.json
 INFO: primitive type "string" used outside top-level definitions
@@ -552,11 +770,7 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/customer.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/customer.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/error.json
-WARNING: minLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/error.json
-WARNING: maxLength field not supported outside top-level definitions
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/error.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/error.json
@@ -564,6 +778,16 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/error.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/error.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/error.json
+WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/error.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/error.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/iot-thing-shadow.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/itinerary.json
 INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/core/itinerary.json
 WARNING: minimum field not supported outside top-level definitions
@@ -574,9 +798,11 @@ WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/itinerary.json
 INFO: missing description
   in ../maas-schemas/schemas/core/itinerary.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/kyc-service.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/kyc-service.json
-INFO: missing description
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/leg.json
 INFO: missing description
   in ../maas-schemas/schemas/core/leg.json
@@ -614,7 +840,9 @@ INFO: missing description
   in ../maas-schemas/schemas/core/leg.json
 INFO: missing description
   in ../maas-schemas/schemas/core/leg.json
-INFO: primitive type "string" used outside top-level definitions
+INFO: missing description
+  in ../maas-schemas/schemas/core/leg.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/modes/MODE_BICYCLE.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_BICYCLE.json
@@ -623,6 +851,22 @@ INFO: primitive type "string" used outside top-level definitions
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_BICYCLE.json
 INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_BICYCLE.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_BUS.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_BUSISH.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_CABLE_CAR.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_CAR.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_FERRY.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_FUNICULAR.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_GONDOLA.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/modes/MODE_RAIL.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_RAIL.json
@@ -631,42 +875,28 @@ INFO: primitive type "string" used outside top-level definitions
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_RAIL.json
 INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_RAIL.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/modes/MODE_SCOOTER.json
 INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_SCOOTER.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/modes/MODE_SHARED_BICYCLE.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_SHARED_BICYCLE.json
 INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_SHARED_BICYCLE.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_SHARED_CAR.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_SHARED_E_BICYCLE.json
+INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_SHARED_E_BICYCLE.json
 INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_SHARED_E_BICYCLE.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-WARNING: minLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-WARNING: maxLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-WARNING: minLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-WARNING: maxLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-WARNING: minLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-WARNING: maxLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-WARNING: minLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-WARNING: maxLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
-INFO: primitive type "number" used outside top-level definitions
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_SUBWAY.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
@@ -687,10 +917,50 @@ WARNING: minLength field not supported outside top-level definitions
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
 INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
 INFO: primitive type "number" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/modes/MODE_TAXI.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_TRAIN.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_TRAINISH.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_TRAM.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_TRANSIT.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/modes/MODE_WALK.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/partialFavoriteLocation.json
+INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/core/partialFavoriteLocation.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/partialFavoriteLocation.json
@@ -702,13 +972,11 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/partialFavoriteLocation.json
 INFO: missing description
   in ../maas-schemas/schemas/core/partialFavoriteLocation.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/paymentSource.json
-WARNING: minLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/paymentSource.json
-WARNING: maxLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/paymentSource.json
-INFO: primitive type "string" used outside top-level definitions
+INFO: missing description
+  in ../maas-schemas/schemas/core/partialFavoriteLocation.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/partialFavoriteLocation.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/paymentSource.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/paymentSource.json
@@ -735,18 +1003,32 @@ WARNING: minLength field not supported outside top-level definitions
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/paymentSource.json
 INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/personal-document.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/personal-document.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/personal-document.json
+  in ../maas-schemas/schemas/core/paymentSource.json
 WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/paymentSource.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/paymentSource.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/paymentSource.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/paymentSource.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/paymentSource.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/paymentSource.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/paymentSource.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/paymentSource.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/paymentSource.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/paymentSource.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/paymentSource.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/personal-document.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/personal-document.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/personal-document.json
-INFO: primitive type "string" used outside top-level definitions
+WARNING: id field not supported
   in ../maas-schemas/schemas/core/personal-document.json
 INFO: missing description
   in ../maas-schemas/schemas/core/personal-document.json
@@ -756,6 +1038,46 @@ INFO: missing description
   in ../maas-schemas/schemas/core/personal-document.json
 INFO: missing description
   in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+INFO: missing description
+  in ../maas-schemas/schemas/core/personal-document.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/plan.json
 INFO: missing description
   in ../maas-schemas/schemas/core/plan.json
 INFO: missing description
@@ -769,6 +1091,8 @@ WARNING: minimum field not supported outside top-level definitions
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/core/product-option.json
 WARNING: minimum field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/product-option.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/product-option.json
 INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/core/product.json
@@ -776,6 +1100,8 @@ WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/product.json
 WARNING: multipleOf field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/product.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/product.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/product.json
 WARNING: minLength field not supported outside top-level definitions
@@ -850,6 +1176,8 @@ INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/core/profile.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/profile.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/profile.json
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/core/profile.json
 WARNING: minimum field not supported outside top-level definitions
@@ -882,11 +1210,7 @@ WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/profile.json
 INFO: missing description
   in ../maas-schemas/schemas/core/profile.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/core/region.json
-WARNING: minLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/core/region.json
-WARNING: maxLength field not supported outside top-level definitions
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/core/region.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/core/region.json
@@ -894,6 +1218,54 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/region.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/core/region.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/core/region.json
+WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/region.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/core/region.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/core/stop.json
+WARNING: patternProperty support has limitations
+  in ../maas-schemas/schemas/environments/accounts.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/environments/accounts.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/accounts.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/accounts.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/accounts.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/accounts.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/accounts.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/accounts.json
+WARNING: patternProperty support has limitations
+  in ../maas-schemas/schemas/environments/apis.json
+WARNING: patternProperty support has limitations
+  in ../maas-schemas/schemas/environments/apis.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/environments/apis.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/apis.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/apis.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/apis.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/apis.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/apis.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/apis.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/apis.json
+INFO: missing description
+  in ../maas-schemas/schemas/environments/apis.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/environments/environments.json
 INFO: missing description
   in ../maas-schemas/schemas/environments/environments.json
 INFO: missing description
@@ -922,6 +1294,10 @@ WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/geojson/geometry.json
 WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/geojson/geometry.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/geojson/geometry.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/auth/auth-sms-login/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/auth/auth-sms-login/request.json
 WARNING: pattern field not supported outside top-level definitions
@@ -930,6 +1306,10 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/auth/auth-sms-login/request.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/auth/auth-sms-login/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/auth/auth-sms-request-code/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/autocomplete/autocomplete-query/request.json
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/autocomplete/autocomplete-query/request.json
 WARNING: minimum field not supported outside top-level definitions
@@ -940,15 +1320,15 @@ WARNING: default field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/autocomplete/autocomplete-query/request.json
 WARNING: default field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/autocomplete/autocomplete-query/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/autocomplete/autocomplete-query/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/autocomplete/autocomplete-query/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/booking-option-create/request.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/booking-option-create/request.json
-INFO: primitive type "string" used outside top-level definitions
-  in ../maas-schemas/schemas/maas-backend/booking-option-create/response.json
-WARNING: minLength field not supported outside top-level definitions
-  in ../maas-schemas/schemas/maas-backend/booking-option-create/response.json
-WARNING: maxLength field not supported outside top-level definitions
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/booking-option-create/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/booking-option-create/response.json
@@ -956,16 +1336,32 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/booking-option-create/response.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/booking-option-create/response.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/booking-option-create/response.json
+WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/booking-option-create/response.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/booking-option-create/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/booking-virtual-create/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/booking-virtual-create/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/booking-virtual-create/response.json
 WARNING: patternProperty support has limitations
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-options/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-options/request.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-options/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-options/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-options/response.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-options/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-products/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-products/response.json
 WARNING: minLength field not supported outside top-level definitions
@@ -995,9 +1391,23 @@ INFO: primitive type "string" used outside top-level definitions
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-products/response.json
 WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-products/response.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-products/response.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-agency-products/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-cancel/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-cancel/response.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-cancel/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-create/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-create/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-list/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-list/request.json
 WARNING: pattern field not supported outside top-level definitions
@@ -1006,12 +1416,36 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-list/request.json
 WARNING: pattern field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-list/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-list/response.json
 WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-list/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-retrieve/request.json
 WARNING: default field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/bookings/bookings-retrieve/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-retrieve/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-update/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/bookings-update/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/v2/bookings-create/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/bookings/v2/bookings-create/response.json
 WARNING: naming clash, ignoring default export
   in ../maas-schemas/schemas/maas-backend/coupons/code.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/coupons/coupons-validate/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/coupons/coupons-validate/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/coupons/v2/coupons-redeem/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/coupons/v2/coupons-redeem/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/customer.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/benefits/callback/request.json
 INFO: primitive type "integer" used outside top-level definitions
@@ -1026,16 +1460,34 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/customer.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/customer.json
-INFO: primitive type "number" used outside top-level definitions
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/favorite-locations/add/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/favorite-locations/add/response.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/customers/favorite-locations/delete/request.json
 INFO: primitive type "number" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/customers/favorite-locations/delete/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/favorite-locations/list/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/favorite-locations/list/response.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/customers/favorite-locations/update/request.json
+INFO: primitive type "number" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/customers/favorite-locations/update/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/favorite-locations/update/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/payment-sources/create/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/payment-sources/create/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/payment-sources/create/request.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/payment-sources/create/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/payment-sources/delete/request.json
 INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/payment-sources/paymentSource.json
 WARNING: minimum field not supported outside top-level definitions
@@ -1072,16 +1524,48 @@ INFO: missing description
   in ../maas-schemas/schemas/maas-backend/customers/payment-sources/paymentSource.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/customers/payment-sources/paymentSource.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/payment-sources/setup-intent/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/payment-sources/setup-intent/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/payment-sources/setup-intent/response.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/payment-sources/setup-intent/response.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/payment-sources/setup-intent/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/payment-sources/update/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/payment-sources/update/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-data-delete/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/personal-data-delete/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/personal-data-delete/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/consent/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/consent/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/create/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/create/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/initiate/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/initiate/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/remove/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/remove/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/revoke-consent/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personal-documents/revoke-consent/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/personalData.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/personalData.json
 INFO: primitive type "string" used outside top-level definitions
@@ -1098,6 +1582,14 @@ WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/personalData.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/personalData.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/retrieve/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/retrieve/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/stats/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/stats/response.json
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/stats/response.json
 WARNING: minimum field not supported outside top-level definitions
@@ -1106,6 +1598,22 @@ INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/stats/response.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/stats/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/update/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/update/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/initiate/request.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/customers/verification/initiate/request.json
+WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/customers/verification/initiate/request.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/customers/verification/initiate/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/initiate/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/media/get/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/media/get/request.json
 WARNING: minLength field not supported outside top-level definitions
@@ -1114,6 +1622,14 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/media/get/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/media/get/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/media/list/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/register/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/register/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/status/response.json
 WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/status/response.json
 INFO: primitive type "string" used outside top-level definitions
@@ -1140,8 +1656,18 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/verification-object.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/verification-object.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/customers/verification/verification-object.json
+WARNING: minLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/customers/verification/verification-object.json
+WARNING: maxLength field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/customers/verification/verification-object.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/verification-object.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/customers/verification/verification-object.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/webhooks/decision/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/webhooks/decision/request.json
 INFO: primitive type "integer" used outside top-level definitions
@@ -1174,6 +1700,8 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/webhooks/decision/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/webhooks/decision/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/verification/webhooks/event/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/webhooks/event/request.json
 INFO: primitive type "integer" used outside top-level definitions
@@ -1186,6 +1714,8 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/webhooks/event/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/verification/webhooks/event/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-card-issue/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-card-issue/request.json
 WARNING: minLength field not supported outside top-level definitions
@@ -1194,8 +1724,12 @@ INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-card-issue/request.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-card-issue/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-card-issue/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-card-issue/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/add-token-reference/request.json
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/add-token-reference/request.json
 WARNING: minimum field not supported outside top-level definitions
@@ -1210,6 +1744,10 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/add-token-reference/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/add-token-reference/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/add-token-reference/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/get-token-reference/request.json
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/get-token-reference/request.json
 WARNING: minimum field not supported outside top-level definitions
@@ -1218,6 +1756,10 @@ INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/get-token-reference/request.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/get-token-reference/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/get-token-reference/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/provision/request.json
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/provision/request.json
 WARNING: minimum field not supported outside top-level definitions
@@ -1234,6 +1776,10 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/provision/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/provision/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/provision/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/virtualCard.json
 INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/virtualCard.json
 WARNING: minimum field not supported outside top-level definitions
@@ -1272,6 +1818,8 @@ WARNING: multipleOf field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/virtualCard.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/virtualCard.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/virtualCardTokenReference.json
 INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/virtualCardTokenReference.json
 WARNING: minimum field not supported outside top-level definitions
@@ -1296,6 +1844,8 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/virtualCardTokenReference.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/customers/virtual-cards/virtualCardTokenReference.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-query/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-query/request.json
 WARNING: minLength field not supported outside top-level definitions
@@ -1312,6 +1862,10 @@ WARNING: default field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-query/request.json
 WARNING: default field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-query/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-query/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-reverse/request.json
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-reverse/request.json
 WARNING: minimum field not supported outside top-level definitions
@@ -1322,6 +1876,8 @@ WARNING: default field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-reverse/request.json
 WARNING: default field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-reverse/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/geocoding/geocoding-reverse/response.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/invoices/invoice.json
 WARNING: naming clash, ignoring default export
@@ -1350,26 +1906,56 @@ WARNING: multipleOf field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/invoices/invoiceLineItem.json
 WARNING: naming clash, ignoring default export
   in ../maas-schemas/schemas/maas-backend/invoices/invoiceLineItem.json
-INFO: missing description
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/invoices/invoiceUnits.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/invoices/invoiceUnits.json
 INFO: missing description
+  in ../maas-schemas/schemas/maas-backend/invoices/invoiceUnits.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-cancel/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-cancel/response.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-create/request.json
 INFO: missing description
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-create/request.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-create/response.json
+INFO: missing description
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-create/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-list/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-list/request.json
 WARNING: pattern field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-list/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-list/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-list/response.json
 WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-list/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-retrieve/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-retrieve/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-retrieve/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-update/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/itineraries/itinerary-update/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/products/products-providers-options/request.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/products/products-providers-options/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/products/products-providers-options/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/products/products-providers-retrieve/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/products/products-providers-retrieve/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/products/provider.json
 INFO: primitive type "string" used outside top-level definitions
@@ -1385,6 +1971,12 @@ INFO: primitive type "string" used outside top-level definitions
 INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/products/provider.json
 INFO: primitive type "number" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/products/provider.json
+INFO: primitive type "number" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/products/provider.json
+INFO: primitive type "number" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/products/provider.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/products/provider.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/products/provider.json
@@ -1422,6 +2014,8 @@ INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/products/provider.json
 INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/products/provider.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-devices-put/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/profile/profile-devices-put/request.json
 WARNING: pattern field not supported outside top-level definitions
@@ -1433,23 +2027,67 @@ INFO: primitive type "string" used outside top-level definitions
 WARNING: pattern field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/profile/profile-devices-put/response.json
 INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/profile/profile-devices-put/response.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/profile/profile-devices-put/response.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/profile/profile-devices-put/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-edit/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-edit/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-favoriteLocations-add/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-favoriteLocations-add/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-favoriteLocations-delete/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/profile/profile-favoriteLocations-delete/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/profile/profile-favoriteLocations-delete/request.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/profile/profile-favoriteLocations-delete/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-favoriteLocations-delete/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-info/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-info/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-webhook/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/profile/profile-webhook/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/provider/autocomplete/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/provider/autocomplete/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/provider/geocoding-reverse/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/provider/geocoding-reverse/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/provider/geocoding/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/provider/geocoding/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/provider/routes/request.json
 WARNING: patternProperty support has limitations
   in ../maas-schemas/schemas/maas-backend/provider/routes/request.json
-INFO: missing description
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/provider/routes/response.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/provider/routes/response.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/provider/routes/response.json
+INFO: missing description
+  in ../maas-schemas/schemas/maas-backend/provider/routes/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/provider/sms/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/provider/sms/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/push-notification/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/push-notification/request.json
 WARNING: minLength field not supported outside top-level definitions
@@ -1484,6 +2122,20 @@ WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/push-notification/request.json
 WARNING: maxItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/push-notification/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/push-notification/response.json
+INFO: primitive type "integer" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/push-notification/response.json
+WARNING: minimum field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/push-notification/response.json
+INFO: primitive type "integer" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/push-notification/response.json
+WARNING: minimum field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/push-notification/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/regions/regions-options/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/regions/regions-options/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/routes/routes-query/request.json
 INFO: primitive type "string" used outside top-level definitions
@@ -1494,8 +2146,14 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/routes/routes-query/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/routes/routes-query/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/routes/routes-query/request.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/routes/routes-query/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/routes/routes-query/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/stations/stations-list/request.json
 INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/stations/stations-list/request.json
 WARNING: minimum field not supported outside top-level definitions
@@ -1508,10 +2166,16 @@ INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/stations/stations-list/request.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/stations/stations-list/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/stations/stations-list/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/stations/stations-retrieve/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/stations/stations-retrieve/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/stations/stations-retrieve/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/stations/stations-retrieve/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/contact.json
 INFO: primitive type "string" used outside top-level definitions
@@ -1543,6 +2207,8 @@ WARNING: maximum field not supported outside top-level definitions
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/contact.json
 WARNING: pattern field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/subscriptions/contact.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/subscriptions/contact.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/subscriptions/contact.json
@@ -1576,6 +2242,10 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/pricing.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/pricing.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/pricing.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscription-intent.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscription-intent.json
 INFO: missing description
@@ -1654,36 +2324,132 @@ INFO: missing description
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptionAddress.json
 WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptionOption.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptionOption.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptionOption.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-change-state/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-change-state/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-create/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-create/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-estimate/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-estimate/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-create/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-create/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-list/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-list/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-list/request.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-list/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-list/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-retrieve/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-retrieve/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-update-state/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-intents-update-state/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-options/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-options/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-options/request.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-options/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-options/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-retrieve/request.json
 WARNING: default field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-retrieve/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-retrieve/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-scheduled-change-delete/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-scheduled-change-delete/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-update/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/subscriptions/subscriptions-update/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-active-itinerary-get/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-active-itinerary-get/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-active-itinerary-set/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-active-itinerary-set/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-active-leg-get/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-active-leg-get/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-active-leg-set/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-active-leg-set/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-cancel-active-itinerary/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-cancel-active-itinerary/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-update-user-location/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tracking/tracking-update-user-location/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tsp-auth/init/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tsp-auth/init/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tsp-auth/validate/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tsp-auth/validate/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tsp-auth/verify/definitions.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tsp-auth/verify/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/tsp-auth/verify/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/vehicle/vehicle-alert/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/vehicle/vehicle-alert/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/vehicle/vehicle-alert/request.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/vehicle/vehicle-alert/request.json
-INFO: primitive type "string" used outside top-level definitions
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/vehicle/vehicle-alert/response.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-bookings-create/request.json
 INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-bookings-create/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-bookings-create/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-bookings-update/request.json
+INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-bookings-update/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-bookings-update/request.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-bookings-update/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-bookings-update/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/avainpay.json
 WARNING: minLength field not supported outside top-level definitions
@@ -1706,6 +2472,8 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/avainpay.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/avainpay.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/avainpay.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/avainpay.json
 INFO: primitive type "string" used outside top-level definitions
@@ -1760,6 +2528,8 @@ WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/stripe.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/stripe.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/stripe.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/stripe.json
 INFO: primitive type "string" used outside top-level definitions
@@ -1784,8 +2554,12 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/yaband.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/yaband.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/yaband.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/gateway/yaband.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/response.json
 WARNING: minLength field not supported outside top-level definitions
@@ -1804,8 +2578,12 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/response.json
 INFO: missing description
   in ../maas-schemas/schemas/maas-backend/webhooks/webhooks-payments/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/zendesk-push-notification/request.json
 WARNING: minItems field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/zendesk-push-notification/request.json
 WARNING: maxItems field not supported outside top-level definitions
@@ -1828,6 +2606,26 @@ WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/zendesk-push-notification/request.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/maas-backend/webhooks/zendesk-push-notification/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/maas-backend/webhooks/zendesk-push-notification/response.json
+INFO: primitive type "integer" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/webhooks/zendesk-push-notification/response.json
+WARNING: minimum field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/webhooks/zendesk-push-notification/response.json
+INFO: primitive type "integer" used outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/webhooks/zendesk-push-notification/response.json
+WARNING: minimum field not supported outside top-level definitions
+  in ../maas-schemas/schemas/maas-backend/webhooks/zendesk-push-notification/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-cancel/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-cancel/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-create/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-create/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-options-list/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/booking-options-list/request.json
 WARNING: maxLength field not supported outside top-level definitions
@@ -1886,6 +2684,18 @@ INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/booking-options-list/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/tsp/booking-options-list/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-options-list/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-read-by-id/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-read-by-id/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-receipt/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-receipt/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-ticket/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/booking-ticket/request.json
 WARNING: pattern field not supported outside top-level definitions
@@ -1896,26 +2706,58 @@ WARNING: pattern field not supported outside top-level definitions
   in ../maas-schemas/schemas/tsp/booking-ticket/request.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/tsp/booking-ticket/request.json
-INFO: primitive type "string" used outside top-level definitions
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/tsp/booking-ticket/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/booking-ticket/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/booking-ticket/response.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/tsp/booking-ticket/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-update/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/booking-update/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/customer-auth-validate/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/customer-auth-validate/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/customer-auth/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/customer-auth/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/customer-registration/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/customer-registration/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/journey-planner/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/journey-planner/request.json
 WARNING: patternProperty support has limitations
   in ../maas-schemas/schemas/tsp/journey-planner/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/journey-planner/request.json
-INFO: primitive type "string" used outside top-level definitions
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/journey-planner/response.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/tsp/manage/request.json
 INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/tsp/manage/request.json
+WARNING: missing $schema declaration
   in ../maas-schemas/schemas/tsp/manage/response.json
+INFO: primitive type "string" used outside top-level definitions
+  in ../maas-schemas/schemas/tsp/manage/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/post-kyc-verification-update/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/post-kyc-verification-update/response.json
 INFO: primitive type "number" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/post-kyc-verification-update/response.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/post-kyc-verification-update/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/stations-list/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/stations-list/request.json
 WARNING: minLength field not supported outside top-level definitions
@@ -1924,11 +2766,25 @@ INFO: primitive type "integer" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/stations-list/request.json
 WARNING: minimum field not supported outside top-level definitions
   in ../maas-schemas/schemas/tsp/stations-list/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/stations-list/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/stations-retrieve/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/stations-retrieve/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/vehicle-alert/request.json
 INFO: primitive type "string" used outside top-level definitions
   in ../maas-schemas/schemas/tsp/vehicle-alert/request.json
 WARNING: minLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/tsp/vehicle-alert/request.json
 WARNING: maxLength field not supported outside top-level definitions
   in ../maas-schemas/schemas/tsp/vehicle-alert/request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/vehicle-alert/response.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/webhooks-bookings-update/remote-request.json
+WARNING: missing $schema declaration
+  in ../maas-schemas/schemas/tsp/webhooks-bookings-update/remote-response.json
 INFO: missing description
   in ../maas-schemas/schemas/tsp/webhooks-bookings-update/remote-response.json

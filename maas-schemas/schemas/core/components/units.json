@@ -56,11 +56,35 @@
       "type": "string",
       "enum": ["EUR", "GBP", "SGD", "USD", "JPY", "CHF"]
     },
+    "currencyEUR": {
+      "default": "EUR",
+      "allOf": [{ "$ref": "#/definitions/currency" }, { "const": "EUR" }]
+    },
+    "currencyGBP": {
+      "default": "GBP",
+      "allOf": [{ "$ref": "#/definitions/currency" }, { "const": "GBP" }]
+    },
+    "currencySGD": {
+      "default": "SGD",
+      "allOf": [{ "$ref": "#/definitions/currency" }, { "const": "SGD" }]
+    },
+    "currencyUSD": {
+      "default": "USD",
+      "allOf": [{ "$ref": "#/definitions/currency" }, { "const": "USD" }]
+    },
+    "currencyJPY": {
+      "default": "JPY",
+      "allOf": [{ "$ref": "#/definitions/currency" }, { "const": "JPY" }]
+    },
+    "currencyCHF": {
+      "default": "CHF",
+      "allOf": [{ "$ref": "#/definitions/currency" }, { "const": "CHF" }]
+    },
     "time": {
       "description": "POSIX time in milliseconds, https://en.wikipedia.org/wiki/Unix_time",
       "type": "integer",
       "maximum": 9007199254740991,
-      "minimum": 1451606400
+      "minimum": 126230400000
     },
     "duration": {
       "description": "duration in milliseconds (negative values permitted), https://en.wikipedia.org/wiki/Unix_time",

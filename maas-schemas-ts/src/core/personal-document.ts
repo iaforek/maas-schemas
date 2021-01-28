@@ -10,6 +10,9 @@ See https://www.npmjs.com/package/io-ts-from-json-schema
 
 import * as t from 'io-ts';
 import * as Units_ from './components/units';
+import * as Common_ from './components/common';
+import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray';
+import { nonEmptyArray } from 'io-ts-types/lib/nonEmptyArray';
 
 export type Defined = {} | null;
 export class DefinedType extends t.Type<Defined> {
@@ -28,6 +31,23 @@ export const Defined: DefinedC = new DefinedType();
 
 export const schemaId = 'http://maasglobal.com/core/personal-document.json';
 
+// DocumentId
+// The purpose of this remains a mystery
+export type DocumentId = t.Branded<Units_.Uuid, DocumentIdBrand>;
+export type DocumentIdC = t.BrandC<typeof Units_.Uuid, DocumentIdBrand>;
+export const DocumentId: DocumentIdC = t.brand(
+  Units_.Uuid,
+  (x): x is t.Branded<Units_.Uuid, DocumentIdBrand> => true,
+  'DocumentId',
+);
+export interface DocumentIdBrand {
+  readonly DocumentId: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(DocumentId)).decodeSync(examplesDocumentId) // => examplesDocumentId */
+export const examplesDocumentId: NonEmptyArray<DocumentId> = ([
+  '932116e4-94cf-41cd-a62b-82d5f2730586',
+] as unknown) as NonEmptyArray<DocumentId>;
+
 // DocumentType
 // The purpose of this remains a mystery
 export type DocumentType = t.Branded<string, DocumentTypeBrand>;
@@ -40,6 +60,63 @@ export const DocumentType: DocumentTypeC = t.brand(
 export interface DocumentTypeBrand {
   readonly DocumentType: unique symbol;
 }
+/** require('io-ts-validator').validator(nonEmptyArray(DocumentType)).decodeSync(examplesDocumentType) // => examplesDocumentType */
+export const examplesDocumentType: NonEmptyArray<DocumentType> = ([
+  'DRIVERS_LICENSE',
+] as unknown) as NonEmptyArray<DocumentType>;
+
+// DocumentNumber
+// The purpose of this remains a mystery
+export type DocumentNumber = t.Branded<string, DocumentNumberBrand>;
+export type DocumentNumberC = t.BrandC<t.StringC, DocumentNumberBrand>;
+export const DocumentNumber: DocumentNumberC = t.brand(
+  t.string,
+  (x): x is t.Branded<string, DocumentNumberBrand> => true,
+  'DocumentNumber',
+);
+export interface DocumentNumberBrand {
+  readonly DocumentNumber: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(DocumentNumber)).decodeSync(examplesDocumentNumber) // => examplesDocumentNumber */
+export const examplesDocumentNumber: NonEmptyArray<DocumentNumber> = ([
+  '123456789012',
+] as unknown) as NonEmptyArray<DocumentNumber>;
+
+// NameOnDocument
+// The purpose of this remains a mystery
+export type NameOnDocument = t.Branded<string, NameOnDocumentBrand>;
+export type NameOnDocumentC = t.BrandC<t.StringC, NameOnDocumentBrand>;
+export const NameOnDocument: NameOnDocumentC = t.brand(
+  t.string,
+  (x): x is t.Branded<string, NameOnDocumentBrand> => true,
+  'NameOnDocument',
+);
+export interface NameOnDocumentBrand {
+  readonly NameOnDocument: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(NameOnDocument)).decodeSync(examplesNameOnDocument) // => examplesNameOnDocument */
+export const examplesNameOnDocument: NonEmptyArray<NameOnDocument> = ([
+  '🍵☃',
+  'Snowman, Tea',
+] as unknown) as NonEmptyArray<NameOnDocument>;
+
+// IssuingCountry
+// The purpose of this remains a mystery
+export type IssuingCountry = t.Branded<string, IssuingCountryBrand>;
+export type IssuingCountryC = t.BrandC<t.StringC, IssuingCountryBrand>;
+export const IssuingCountry: IssuingCountryC = t.brand(
+  t.string,
+  (x): x is t.Branded<string, IssuingCountryBrand> =>
+    typeof x !== 'string' || x.length >= 2,
+  'IssuingCountry',
+);
+export interface IssuingCountryBrand {
+  readonly IssuingCountry: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(IssuingCountry)).decodeSync(examplesIssuingCountry) // => examplesIssuingCountry */
+export const examplesIssuingCountry: NonEmptyArray<IssuingCountry> = ([
+  'CX',
+] as unknown) as NonEmptyArray<IssuingCountry>;
 
 // DocumentStatus
 // The purpose of this remains a mystery
@@ -104,6 +181,371 @@ export const DocumentStatus: DocumentStatusC = t.brand(
 export interface DocumentStatusBrand {
   readonly DocumentStatus: unique symbol;
 }
+/** require('io-ts-validator').validator(nonEmptyArray(DocumentStatus)).decodeSync(examplesDocumentStatus) // => examplesDocumentStatus */
+export const examplesDocumentStatus: NonEmptyArray<DocumentStatus> = ([
+  'APPROVED',
+] as unknown) as NonEmptyArray<DocumentStatus>;
+
+// DocumentStatusPENDING
+// The purpose of this remains a mystery
+export type DocumentStatusPENDING = t.Branded<
+  DocumentStatus & 'PENDING',
+  DocumentStatusPENDINGBrand
+>;
+export type DocumentStatusPENDINGC = t.BrandC<
+  t.IntersectionC<[typeof DocumentStatus, t.LiteralC<'PENDING'>]>,
+  DocumentStatusPENDINGBrand
+>;
+export const DocumentStatusPENDING: DocumentStatusPENDINGC = t.brand(
+  t.intersection([DocumentStatus, t.literal('PENDING')]),
+  (x): x is t.Branded<DocumentStatus & 'PENDING', DocumentStatusPENDINGBrand> => true,
+  'DocumentStatusPENDING',
+);
+export interface DocumentStatusPENDINGBrand {
+  readonly DocumentStatusPENDING: unique symbol;
+}
+/** require('io-ts-validator').validator(DocumentStatusPENDING).decodeSync(defaultDocumentStatusPENDING) // => defaultDocumentStatusPENDING */
+export const defaultDocumentStatusPENDING: DocumentStatusPENDING = ('PENDING' as unknown) as DocumentStatusPENDING;
+
+// DocumentStatusAPPROVED
+// The purpose of this remains a mystery
+export type DocumentStatusAPPROVED = t.Branded<
+  DocumentStatus & 'APPROVED',
+  DocumentStatusAPPROVEDBrand
+>;
+export type DocumentStatusAPPROVEDC = t.BrandC<
+  t.IntersectionC<[typeof DocumentStatus, t.LiteralC<'APPROVED'>]>,
+  DocumentStatusAPPROVEDBrand
+>;
+export const DocumentStatusAPPROVED: DocumentStatusAPPROVEDC = t.brand(
+  t.intersection([DocumentStatus, t.literal('APPROVED')]),
+  (x): x is t.Branded<DocumentStatus & 'APPROVED', DocumentStatusAPPROVEDBrand> => true,
+  'DocumentStatusAPPROVED',
+);
+export interface DocumentStatusAPPROVEDBrand {
+  readonly DocumentStatusAPPROVED: unique symbol;
+}
+/** require('io-ts-validator').validator(DocumentStatusAPPROVED).decodeSync(defaultDocumentStatusAPPROVED) // => defaultDocumentStatusAPPROVED */
+export const defaultDocumentStatusAPPROVED: DocumentStatusAPPROVED = ('APPROVED' as unknown) as DocumentStatusAPPROVED;
+
+// DocumentStatusDECLINED
+// The purpose of this remains a mystery
+export type DocumentStatusDECLINED = t.Branded<
+  DocumentStatus & 'DECLINED',
+  DocumentStatusDECLINEDBrand
+>;
+export type DocumentStatusDECLINEDC = t.BrandC<
+  t.IntersectionC<[typeof DocumentStatus, t.LiteralC<'DECLINED'>]>,
+  DocumentStatusDECLINEDBrand
+>;
+export const DocumentStatusDECLINED: DocumentStatusDECLINEDC = t.brand(
+  t.intersection([DocumentStatus, t.literal('DECLINED')]),
+  (x): x is t.Branded<DocumentStatus & 'DECLINED', DocumentStatusDECLINEDBrand> => true,
+  'DocumentStatusDECLINED',
+);
+export interface DocumentStatusDECLINEDBrand {
+  readonly DocumentStatusDECLINED: unique symbol;
+}
+/** require('io-ts-validator').validator(DocumentStatusDECLINED).decodeSync(defaultDocumentStatusDECLINED) // => defaultDocumentStatusDECLINED */
+export const defaultDocumentStatusDECLINED: DocumentStatusDECLINED = ('DECLINED' as unknown) as DocumentStatusDECLINED;
+
+// DocumentStatusEXPIRED
+// The purpose of this remains a mystery
+export type DocumentStatusEXPIRED = t.Branded<
+  DocumentStatus & 'EXPIRED',
+  DocumentStatusEXPIREDBrand
+>;
+export type DocumentStatusEXPIREDC = t.BrandC<
+  t.IntersectionC<[typeof DocumentStatus, t.LiteralC<'EXPIRED'>]>,
+  DocumentStatusEXPIREDBrand
+>;
+export const DocumentStatusEXPIRED: DocumentStatusEXPIREDC = t.brand(
+  t.intersection([DocumentStatus, t.literal('EXPIRED')]),
+  (x): x is t.Branded<DocumentStatus & 'EXPIRED', DocumentStatusEXPIREDBrand> => true,
+  'DocumentStatusEXPIRED',
+);
+export interface DocumentStatusEXPIREDBrand {
+  readonly DocumentStatusEXPIRED: unique symbol;
+}
+/** require('io-ts-validator').validator(DocumentStatusEXPIRED).decodeSync(defaultDocumentStatusEXPIRED) // => defaultDocumentStatusEXPIRED */
+export const defaultDocumentStatusEXPIRED: DocumentStatusEXPIRED = ('EXPIRED' as unknown) as DocumentStatusEXPIRED;
+
+// DocumentStatusRESUBMISSION_REQUESTED
+// The purpose of this remains a mystery
+export type DocumentStatusRESUBMISSION_REQUESTED = t.Branded<
+  DocumentStatus & 'RESUBMISSION_REQUESTED',
+  DocumentStatusRESUBMISSION_REQUESTEDBrand
+>;
+export type DocumentStatusRESUBMISSION_REQUESTEDC = t.BrandC<
+  t.IntersectionC<[typeof DocumentStatus, t.LiteralC<'RESUBMISSION_REQUESTED'>]>,
+  DocumentStatusRESUBMISSION_REQUESTEDBrand
+>;
+export const DocumentStatusRESUBMISSION_REQUESTED: DocumentStatusRESUBMISSION_REQUESTEDC = t.brand(
+  t.intersection([DocumentStatus, t.literal('RESUBMISSION_REQUESTED')]),
+  (
+    x,
+  ): x is t.Branded<
+    DocumentStatus & 'RESUBMISSION_REQUESTED',
+    DocumentStatusRESUBMISSION_REQUESTEDBrand
+  > => true,
+  'DocumentStatusRESUBMISSION_REQUESTED',
+);
+export interface DocumentStatusRESUBMISSION_REQUESTEDBrand {
+  readonly DocumentStatusRESUBMISSION_REQUESTED: unique symbol;
+}
+/** require('io-ts-validator').validator(DocumentStatusRESUBMISSION_REQUESTED).decodeSync(defaultDocumentStatusRESUBMISSION_REQUESTED) // => defaultDocumentStatusRESUBMISSION_REQUESTED */
+export const defaultDocumentStatusRESUBMISSION_REQUESTED: DocumentStatusRESUBMISSION_REQUESTED = ('RESUBMISSION_REQUESTED' as unknown) as DocumentStatusRESUBMISSION_REQUESTED;
+
+// DocumentStatusABANDONED
+// The purpose of this remains a mystery
+export type DocumentStatusABANDONED = t.Branded<
+  DocumentStatus & 'ABANDONED',
+  DocumentStatusABANDONEDBrand
+>;
+export type DocumentStatusABANDONEDC = t.BrandC<
+  t.IntersectionC<[typeof DocumentStatus, t.LiteralC<'ABANDONED'>]>,
+  DocumentStatusABANDONEDBrand
+>;
+export const DocumentStatusABANDONED: DocumentStatusABANDONEDC = t.brand(
+  t.intersection([DocumentStatus, t.literal('ABANDONED')]),
+  (x): x is t.Branded<DocumentStatus & 'ABANDONED', DocumentStatusABANDONEDBrand> => true,
+  'DocumentStatusABANDONED',
+);
+export interface DocumentStatusABANDONEDBrand {
+  readonly DocumentStatusABANDONED: unique symbol;
+}
+/** require('io-ts-validator').validator(DocumentStatusABANDONED).decodeSync(defaultDocumentStatusABANDONED) // => defaultDocumentStatusABANDONED */
+export const defaultDocumentStatusABANDONED: DocumentStatusABANDONED = ('ABANDONED' as unknown) as DocumentStatusABANDONED;
+
+// ValidFrom
+// The purpose of this remains a mystery
+export type ValidFrom = t.Branded<Units_.IsoDate, ValidFromBrand>;
+export type ValidFromC = t.BrandC<typeof Units_.IsoDate, ValidFromBrand>;
+export const ValidFrom: ValidFromC = t.brand(
+  Units_.IsoDate,
+  (x): x is t.Branded<Units_.IsoDate, ValidFromBrand> => true,
+  'ValidFrom',
+);
+export interface ValidFromBrand {
+  readonly ValidFrom: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(ValidFrom)).decodeSync(examplesValidFrom) // => examplesValidFrom */
+export const examplesValidFrom: NonEmptyArray<ValidFrom> = ([
+  '2020-01-01',
+] as unknown) as NonEmptyArray<ValidFrom>;
+
+// ValidTo
+// The purpose of this remains a mystery
+export type ValidTo = t.Branded<Units_.IsoDate, ValidToBrand>;
+export type ValidToC = t.BrandC<typeof Units_.IsoDate, ValidToBrand>;
+export const ValidTo: ValidToC = t.brand(
+  Units_.IsoDate,
+  (x): x is t.Branded<Units_.IsoDate, ValidToBrand> => true,
+  'ValidTo',
+);
+export interface ValidToBrand {
+  readonly ValidTo: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(ValidTo)).decodeSync(examplesValidTo) // => examplesValidTo */
+export const examplesValidTo: NonEmptyArray<ValidTo> = ([
+  '2030-12-31',
+] as unknown) as NonEmptyArray<ValidTo>;
+
+// Category
+// The purpose of this remains a mystery
+export type Category = t.Branded<string, CategoryBrand>;
+export type CategoryC = t.BrandC<t.StringC, CategoryBrand>;
+export const Category: CategoryC = t.brand(
+  t.string,
+  (x): x is t.Branded<string, CategoryBrand> => true,
+  'Category',
+);
+export interface CategoryBrand {
+  readonly Category: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(Category)).decodeSync(examplesCategory) // => examplesCategory */
+export const examplesCategory: NonEmptyArray<Category> = ([
+  'normal',
+] as unknown) as NonEmptyArray<Category>;
+
+// Details
+// The purpose of this remains a mystery
+export type Details = t.Branded<
+  {
+    category?: Category;
+  },
+  DetailsBrand
+>;
+export type DetailsC = t.BrandC<
+  t.PartialC<{
+    category: typeof Category;
+  }>,
+  DetailsBrand
+>;
+export const Details: DetailsC = t.brand(
+  t.partial({
+    category: Category,
+  }),
+  (
+    x,
+  ): x is t.Branded<
+    {
+      category?: Category;
+    },
+    DetailsBrand
+  > => true,
+  'Details',
+);
+export interface DetailsBrand {
+  readonly Details: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(Details)).decodeSync(examplesDetails) // => examplesDetails */
+export const examplesDetails: NonEmptyArray<Details> = ([
+  { category: 'normal' },
+] as unknown) as NonEmptyArray<Details>;
+
+// MediaItemContent
+// The purpose of this remains a mystery
+export type MediaItemContent = t.Branded<string, MediaItemContentBrand>;
+export type MediaItemContentC = t.BrandC<t.StringC, MediaItemContentBrand>;
+export const MediaItemContent: MediaItemContentC = t.brand(
+  t.string,
+  (x): x is t.Branded<string, MediaItemContentBrand> => true,
+  'MediaItemContent',
+);
+export interface MediaItemContentBrand {
+  readonly MediaItemContent: unique symbol;
+}
+
+// MediaItemContext
+// The purpose of this remains a mystery
+export type MediaItemContext = t.Branded<string, MediaItemContextBrand>;
+export type MediaItemContextC = t.BrandC<t.StringC, MediaItemContextBrand>;
+export const MediaItemContext: MediaItemContextC = t.brand(
+  t.string,
+  (x): x is t.Branded<string, MediaItemContextBrand> => true,
+  'MediaItemContext',
+);
+export interface MediaItemContextBrand {
+  readonly MediaItemContext: unique symbol;
+}
+
+// MediaItem
+// The purpose of this remains a mystery
+export type MediaItem = t.Branded<
+  {
+    content?: MediaItemContent;
+    context?: MediaItemContext;
+  } & {
+    content: Defined;
+    context: Defined;
+  },
+  MediaItemBrand
+>;
+export type MediaItemC = t.BrandC<
+  t.IntersectionC<
+    [
+      t.PartialC<{
+        content: typeof MediaItemContent;
+        context: typeof MediaItemContext;
+      }>,
+      t.TypeC<{
+        content: typeof Defined;
+        context: typeof Defined;
+      }>,
+    ]
+  >,
+  MediaItemBrand
+>;
+export const MediaItem: MediaItemC = t.brand(
+  t.intersection([
+    t.partial({
+      content: MediaItemContent,
+      context: MediaItemContext,
+    }),
+    t.type({
+      content: Defined,
+      context: Defined,
+    }),
+  ]),
+  (
+    x,
+  ): x is t.Branded<
+    {
+      content?: MediaItemContent;
+      context?: MediaItemContext;
+    } & {
+      content: Defined;
+      context: Defined;
+    },
+    MediaItemBrand
+  > => true,
+  'MediaItem',
+);
+export interface MediaItemBrand {
+  readonly MediaItem: unique symbol;
+}
+
+// Media
+// Media documents related to user personal document.
+export type Media = t.Branded<Array<MediaItem>, MediaBrand>;
+export type MediaC = t.BrandC<t.ArrayC<typeof MediaItem>, MediaBrand>;
+export const Media: MediaC = t.brand(
+  t.array(MediaItem),
+  (x): x is t.Branded<Array<MediaItem>, MediaBrand> => true,
+  'Media',
+);
+export interface MediaBrand {
+  readonly Media: unique symbol;
+}
+
+// KycServiceId
+// Id of kyc service used
+export type KycServiceId = t.Branded<string, KycServiceIdBrand>;
+export type KycServiceIdC = t.BrandC<t.StringC, KycServiceIdBrand>;
+export const KycServiceId: KycServiceIdC = t.brand(
+  t.string,
+  (x): x is t.Branded<string, KycServiceIdBrand> =>
+    typeof x !== 'string' || x.length >= 2,
+  'KycServiceId',
+);
+export interface KycServiceIdBrand {
+  readonly KycServiceId: unique symbol;
+}
+
+// FirstName
+// The purpose of this remains a mystery
+export type FirstName = t.Branded<Common_.PersonalName, FirstNameBrand>;
+export type FirstNameC = t.BrandC<typeof Common_.PersonalName, FirstNameBrand>;
+export const FirstName: FirstNameC = t.brand(
+  Common_.PersonalName,
+  (x): x is t.Branded<Common_.PersonalName, FirstNameBrand> => true,
+  'FirstName',
+);
+export interface FirstNameBrand {
+  readonly FirstName: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(FirstName)).decodeSync(examplesFirstName) // => examplesFirstName */
+export const examplesFirstName: NonEmptyArray<FirstName> = ([
+  'Tea',
+] as unknown) as NonEmptyArray<FirstName>;
+
+// LastName
+// The purpose of this remains a mystery
+export type LastName = t.Branded<Common_.PersonalName, LastNameBrand>;
+export type LastNameC = t.BrandC<typeof Common_.PersonalName, LastNameBrand>;
+export const LastName: LastNameC = t.brand(
+  Common_.PersonalName,
+  (x): x is t.Branded<Common_.PersonalName, LastNameBrand> => true,
+  'LastName',
+);
+export interface LastNameBrand {
+  readonly LastName: unique symbol;
+}
+/** require('io-ts-validator').validator(nonEmptyArray(LastName)).decodeSync(examplesLastName) // => examplesLastName */
+export const examplesLastName: NonEmptyArray<LastName> = ([
+  'Snowman',
+] as unknown) as NonEmptyArray<LastName>;
 
 // PartyId
 // The purpose of this remains a mystery
@@ -137,31 +579,23 @@ export interface PartyTypeBrand {
 // The default export. More information at the top.
 export type PersonalDocument = t.Branded<
   {
-    id?: Units_.Uuid;
+    properties?: unknown;
     identityId?: Units_.IdentityId;
     type?: DocumentType;
-    documentNumber?: string;
-    nameOnDocument?: string;
-    issuingCountry?: string;
+    documentNumber?: DocumentNumber;
+    nameOnDocument?: NameOnDocument;
+    issuingCountry?: IssuingCountry;
     status?: DocumentStatus;
-    validFrom?: Units_.IsoDate;
-    validTo?: Units_.IsoDate;
-    details?: {
-      category?: string;
-    };
-    media?: Array<
-      {
-        content?: string;
-        context?: string;
-      } & {
-        content: Defined;
-        context: Defined;
-      }
-    >;
+    validFrom?: ValidFrom;
+    validTo?: ValidTo;
+    details?: Details;
+    media?: Media;
+    kycServiceId?: KycServiceId;
+    firstName?: FirstName | null;
+    lastName?: LastName | null;
   } & {
     type: Defined;
     documentNumber: Defined;
-    nameOnDocument: Defined;
     issuingCountry: Defined;
     status: Defined;
     validFrom: Defined;
@@ -173,37 +607,24 @@ export type PersonalDocumentC = t.BrandC<
   t.IntersectionC<
     [
       t.PartialC<{
-        id: typeof Units_.Uuid;
+        properties: t.UnknownC;
         identityId: typeof Units_.IdentityId;
         type: typeof DocumentType;
-        documentNumber: t.StringC;
-        nameOnDocument: t.StringC;
-        issuingCountry: t.StringC;
+        documentNumber: typeof DocumentNumber;
+        nameOnDocument: typeof NameOnDocument;
+        issuingCountry: typeof IssuingCountry;
         status: typeof DocumentStatus;
-        validFrom: typeof Units_.IsoDate;
-        validTo: typeof Units_.IsoDate;
-        details: t.PartialC<{
-          category: t.StringC;
-        }>;
-        media: t.ArrayC<
-          t.IntersectionC<
-            [
-              t.PartialC<{
-                content: t.StringC;
-                context: t.StringC;
-              }>,
-              t.TypeC<{
-                content: typeof Defined;
-                context: typeof Defined;
-              }>,
-            ]
-          >
-        >;
+        validFrom: typeof ValidFrom;
+        validTo: typeof ValidTo;
+        details: typeof Details;
+        media: typeof Media;
+        kycServiceId: typeof KycServiceId;
+        firstName: t.UnionC<[typeof FirstName, t.NullC]>;
+        lastName: t.UnionC<[typeof LastName, t.NullC]>;
       }>,
       t.TypeC<{
         type: typeof Defined;
         documentNumber: typeof Defined;
-        nameOnDocument: typeof Defined;
         issuingCountry: typeof Defined;
         status: typeof Defined;
         validFrom: typeof Defined;
@@ -216,35 +637,24 @@ export type PersonalDocumentC = t.BrandC<
 export const PersonalDocument: PersonalDocumentC = t.brand(
   t.intersection([
     t.partial({
-      id: Units_.Uuid,
+      properties: t.unknown,
       identityId: Units_.IdentityId,
       type: DocumentType,
-      documentNumber: t.string,
-      nameOnDocument: t.string,
-      issuingCountry: t.string,
+      documentNumber: DocumentNumber,
+      nameOnDocument: NameOnDocument,
+      issuingCountry: IssuingCountry,
       status: DocumentStatus,
-      validFrom: Units_.IsoDate,
-      validTo: Units_.IsoDate,
-      details: t.partial({
-        category: t.string,
-      }),
-      media: t.array(
-        t.intersection([
-          t.partial({
-            content: t.string,
-            context: t.string,
-          }),
-          t.type({
-            content: Defined,
-            context: Defined,
-          }),
-        ]),
-      ),
+      validFrom: ValidFrom,
+      validTo: ValidTo,
+      details: Details,
+      media: Media,
+      kycServiceId: KycServiceId,
+      firstName: t.union([FirstName, t.null]),
+      lastName: t.union([LastName, t.null]),
     }),
     t.type({
       type: Defined,
       documentNumber: Defined,
-      nameOnDocument: Defined,
       issuingCountry: Defined,
       status: Defined,
       validFrom: Defined,
@@ -255,31 +665,23 @@ export const PersonalDocument: PersonalDocumentC = t.brand(
     x,
   ): x is t.Branded<
     {
-      id?: Units_.Uuid;
+      properties?: unknown;
       identityId?: Units_.IdentityId;
       type?: DocumentType;
-      documentNumber?: string;
-      nameOnDocument?: string;
-      issuingCountry?: string;
+      documentNumber?: DocumentNumber;
+      nameOnDocument?: NameOnDocument;
+      issuingCountry?: IssuingCountry;
       status?: DocumentStatus;
-      validFrom?: Units_.IsoDate;
-      validTo?: Units_.IsoDate;
-      details?: {
-        category?: string;
-      };
-      media?: Array<
-        {
-          content?: string;
-          context?: string;
-        } & {
-          content: Defined;
-          context: Defined;
-        }
-      >;
+      validFrom?: ValidFrom;
+      validTo?: ValidTo;
+      details?: Details;
+      media?: Media;
+      kycServiceId?: KycServiceId;
+      firstName?: FirstName | null;
+      lastName?: LastName | null;
     } & {
       type: Defined;
       documentNumber: Defined;
-      nameOnDocument: Defined;
       issuingCountry: Defined;
       status: Defined;
       validFrom: Defined;
@@ -292,6 +694,29 @@ export const PersonalDocument: PersonalDocumentC = t.brand(
 export interface PersonalDocumentBrand {
   readonly PersonalDocument: unique symbol;
 }
+/** require('io-ts-validator').validator(nonEmptyArray(PersonalDocument)).decodeSync(examplesPersonalDocument) // => examplesPersonalDocument */
+export const examplesPersonalDocument: NonEmptyArray<PersonalDocument> = ([
+  {
+    identityId: '44ae30b6-eebc-4c00-9e46-704554c2a8a0',
+    type: 'DRIVERS_LICENSE',
+    documentNumber: '123456789012',
+    nameOnDocument: '🍵☃',
+    issuingCountry: 'CX',
+    status: 'APPROVED',
+    validFrom: '2020-01-01',
+    validTo: '2030-12-31',
+    details: { category: 'normal' },
+    stateLog: [
+      { status: 'PENDING', timestamp: 1609845548067 },
+      { status: 'APPROVED', timestamp: 1609945548067 },
+    ],
+    created: '2020-01-04T12:34:50.123456+00:00',
+    modified: '2020-01-05T12:34:50.123456+00:00',
+    id: '932116e4-94cf-41cd-a62b-82d5f2730586',
+    firstName: 'Tea',
+    lastName: 'Snowman',
+  },
+] as unknown) as NonEmptyArray<PersonalDocument>;
 
 export default PersonalDocument;
 
