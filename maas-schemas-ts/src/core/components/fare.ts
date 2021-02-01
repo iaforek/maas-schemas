@@ -11,17 +11,6 @@ See https://www.npmjs.com/package/io-ts-from-json-schema
 import * as t from 'io-ts';
 import * as Common_ from './common';
 
-export interface NullBrand {
-  readonly Null: unique symbol;
-}
-export type NullC = t.BrandC<t.UnknownC, NullBrand>;
-export const Null: NullC = t.brand(
-  t.unknown,
-  (n): n is t.Branded<unknown, NullBrand> => n === null,
-  'Null',
-);
-export type Null = t.TypeOf<typeof Null>;
-
 export type Defined = {} | null;
 export class DefinedType extends t.Type<Defined> {
   readonly _tag: 'DefinedType' = 'DefinedType';
@@ -109,12 +98,12 @@ export const defaultFareTypeREFUND: FareTypeREFUND = ('refund' as unknown) as Fa
 // The default export. More information at the top.
 export type Fare = t.Branded<
   {
-    amount?: number | Null;
+    amount?: number | null;
     currency?: Common_.MetaCurrency;
     tokenId?: TokenId;
     hidden?: boolean;
-    originalAmount?: number | Null;
-    productionAmount?: number | Null;
+    originalAmount?: number | null;
+    productionAmount?: number | null;
     type?: FareType;
   } & {
     amount: Defined;
@@ -126,12 +115,12 @@ export type FareC = t.BrandC<
   t.IntersectionC<
     [
       t.PartialC<{
-        amount: t.UnionC<[t.NumberC, typeof Null]>;
+        amount: t.UnionC<[t.NumberC, t.NullC]>;
         currency: typeof Common_.MetaCurrency;
         tokenId: typeof TokenId;
         hidden: t.BooleanC;
-        originalAmount: t.UnionC<[t.NumberC, typeof Null]>;
-        productionAmount: t.UnionC<[t.NumberC, typeof Null]>;
+        originalAmount: t.UnionC<[t.NumberC, t.NullC]>;
+        productionAmount: t.UnionC<[t.NumberC, t.NullC]>;
         type: typeof FareType;
       }>,
       t.TypeC<{
@@ -145,12 +134,12 @@ export type FareC = t.BrandC<
 export const Fare: FareC = t.brand(
   t.intersection([
     t.partial({
-      amount: t.union([t.number, Null]),
+      amount: t.union([t.number, t.null]),
       currency: Common_.MetaCurrency,
       tokenId: TokenId,
       hidden: t.boolean,
-      originalAmount: t.union([t.number, Null]),
-      productionAmount: t.union([t.number, Null]),
+      originalAmount: t.union([t.number, t.null]),
+      productionAmount: t.union([t.number, t.null]),
       type: FareType,
     }),
     t.type({
@@ -162,12 +151,12 @@ export const Fare: FareC = t.brand(
     x,
   ): x is t.Branded<
     {
-      amount?: number | Null;
+      amount?: number | null;
       currency?: Common_.MetaCurrency;
       tokenId?: TokenId;
       hidden?: boolean;
-      originalAmount?: number | Null;
-      productionAmount?: number | Null;
+      originalAmount?: number | null;
+      productionAmount?: number | null;
       type?: FareType;
     } & {
       amount: Defined;
