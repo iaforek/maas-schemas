@@ -29,6 +29,17 @@ export class DefinedType extends t.Type<Defined> {
 export interface DefinedC extends DefinedType {}
 export const Defined: DefinedC = new DefinedType();
 
+export interface NullBrand {
+  readonly Null: unique symbol;
+}
+export type NullC = t.BrandC<t.UnknownC, NullBrand>;
+export const Null: NullC = t.brand(
+  t.unknown,
+  (n): n is t.Branded<unknown, NullBrand> => n === null,
+  'Null',
+);
+export type Null = t.TypeOf<typeof Null>;
+
 export const schemaId = 'http://maasglobal.com/core/personal-document.json';
 
 // DocumentId
@@ -579,7 +590,7 @@ export interface PartyTypeBrand {
 // The default export. More information at the top.
 export type PersonalDocument = t.Branded<
   {
-    properties?: unknown;
+    id?: DocumentId;
     identityId?: Units_.IdentityId;
     type?: DocumentType;
     documentNumber?: DocumentNumber;
@@ -591,8 +602,8 @@ export type PersonalDocument = t.Branded<
     details?: Details;
     media?: Media;
     kycServiceId?: KycServiceId;
-    firstName?: FirstName | null;
-    lastName?: LastName | null;
+    firstName?: FirstName | Null;
+    lastName?: LastName | Null;
   } & {
     type: Defined;
     documentNumber: Defined;
@@ -607,7 +618,7 @@ export type PersonalDocumentC = t.BrandC<
   t.IntersectionC<
     [
       t.PartialC<{
-        properties: t.UnknownC;
+        id: typeof DocumentId;
         identityId: typeof Units_.IdentityId;
         type: typeof DocumentType;
         documentNumber: typeof DocumentNumber;
@@ -619,8 +630,8 @@ export type PersonalDocumentC = t.BrandC<
         details: typeof Details;
         media: typeof Media;
         kycServiceId: typeof KycServiceId;
-        firstName: t.UnionC<[typeof FirstName, t.NullC]>;
-        lastName: t.UnionC<[typeof LastName, t.NullC]>;
+        firstName: t.UnionC<[typeof FirstName, typeof Null]>;
+        lastName: t.UnionC<[typeof LastName, typeof Null]>;
       }>,
       t.TypeC<{
         type: typeof Defined;
@@ -637,7 +648,7 @@ export type PersonalDocumentC = t.BrandC<
 export const PersonalDocument: PersonalDocumentC = t.brand(
   t.intersection([
     t.partial({
-      properties: t.unknown,
+      id: DocumentId,
       identityId: Units_.IdentityId,
       type: DocumentType,
       documentNumber: DocumentNumber,
@@ -649,8 +660,8 @@ export const PersonalDocument: PersonalDocumentC = t.brand(
       details: Details,
       media: Media,
       kycServiceId: KycServiceId,
-      firstName: t.union([FirstName, t.null]),
-      lastName: t.union([LastName, t.null]),
+      firstName: t.union([FirstName, Null]),
+      lastName: t.union([LastName, Null]),
     }),
     t.type({
       type: Defined,
@@ -665,7 +676,7 @@ export const PersonalDocument: PersonalDocumentC = t.brand(
     x,
   ): x is t.Branded<
     {
-      properties?: unknown;
+      id?: DocumentId;
       identityId?: Units_.IdentityId;
       type?: DocumentType;
       documentNumber?: DocumentNumber;
@@ -677,8 +688,8 @@ export const PersonalDocument: PersonalDocumentC = t.brand(
       details?: Details;
       media?: Media;
       kycServiceId?: KycServiceId;
-      firstName?: FirstName | null;
-      lastName?: LastName | null;
+      firstName?: FirstName | Null;
+      lastName?: LastName | Null;
     } & {
       type: Defined;
       documentNumber: Defined;
